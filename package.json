@@ -1,0 +1,24 @@
+{
+  "name": "-project_group_9_recipe_sharing_platform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bjb629/-Project_Group_9_Recipe_Sharing_Platform.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/bjb629/-Project_Group_9_Recipe_Sharing_Platform/issues"
+  },
+  "homepage": "https://github.com/bjb629/-Project_Group_9_Recipe_Sharing_Platform#readme",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
