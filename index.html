@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Food Swap</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <nav class="navbar">
+            <h2 class="nav-title">Food Swap</h2>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Browse Recipes</a></li>
+                <li><a href="submit-recipe.html">Submit Recipe</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+
+            <div class="hero-content">
+                <div class="hero-title">
+                    <h1>Food Swap</h1>
+                    <p>What's on the menu today?</p>
+                </div>
+
+                <div class="search-container">
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Find a new recipe"
+                    >
+                    <button onclick="searchRecipes()">
+                        Search
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+    </header>
+
+    <section class="food-banner">
+        <img src="images/food-banner.jpg"
+            alt="A Feast For Many">
+    </section>
+
+    <section class="categories">
+        <h2>Browse by Meal</h2>
+
+        <div class="category-links">
+            <button onclick="filterCategory('All')">All</button>
+
+            <button onclick="filterCategory('Breakfast')">
+                Breakfast
+            </button>
+
+            <button onclick="filterCategory('Lunch')">
+                Lunch
+            </button>
+
+            <button onclick="filterCategory('Dinner')">
+                Dinner
+            </button>
+
+            <button onclick="filterCategory('Dessert')">
+                Dessert
+            </button>
+        </div>
+    </section>
+
+    <section class="popular-recipes">
+
+        <h2>Popular Recipes</h2>
+
+        <p id="searchMessage"></p>
+
+        <div class="recipe-container" id="recipeContainer">
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Food Swap | Share something delicious.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

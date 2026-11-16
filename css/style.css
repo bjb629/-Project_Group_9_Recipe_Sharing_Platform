@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f7f2;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #302f20;
+    color: white;
+    padding: 0 5%;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 35px;
+    border-bottom: 1px solid #aaa58e;
+}
+
+.nav-title {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #d6bb80;
+}
+
+/* Main Welcome Section */
+.hero {
+    padding: 30px 55px 40px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-title h1 {
+    font-family: "Courgette", cursive;
+    font-size: clamp(55px, 8vw, 90px);
+    font-weight: 400;
+    margin: 0;
+    color: white;
+}
+
+.hero-title p {
+    color: #d6bb80;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 12px;
+}
+
+/* Search Bar */
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 5px 12px;
+    width: 45%;
+    max-width: 480px;
+}
+
+.search-container input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    padding: 12px;
+    font-size: 17px;
+}
+
+.search-container input::placeholder {
+    color: #aaa;
+}
+
+.search-container button {
+    background-color: #302f20;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #55523a;
+}
+
+.food-banner {
+    padding: 0 5%;
+    background-color: #302f20;
+}
+
+.food-banner img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.categories {
+    text-align: center;
+    padding: 45px 20px 30px;
+}
+
+.categories h2,
+.popular-recipes h2 {
+    color: #302f20;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.category-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.category-links button {
+    background-color: #e5e4d8;
+    color: #302f20;
+    border: 1px solid #d0cfbf;
+    padding: 12px 28px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.category-links button:hover {
+    background-color: #302f20;
+    color: white;
+}
+
+/* Popular Recipes */
+.popular-recipes {
+    text-align: center;
+    padding: 35px 5% 55px;
+}
+
+.recipe-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 25px auto;
+}
+
+.recipe-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-card h3 {
+    margin: 15px 15px 5px;
+}
+
+.recipe-card p {
+    margin: 10px 15px 15px;
+    color: #777044;
+}
+
+.recipe-card a {
+    color: #302f20;
+    text-decoration: none;
+}
+
+.recipe-card a:hover {
+    text-decoration: underline;
+}
+
+#searchMessage {
+    color: #777044;
+}
+
+footer {
+    background-color: #302f20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    .food-banner img {
+        height: 260px;
+    }
+
+    .recipe-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .hero {
+        padding: 30px 15px;
+    }
+
+    .hero-title h1 {
+        font-size: 55px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .food-banner img {
+        height: 200px;
+    }
+
+    .recipe-container {
+        grid-template-columns: 1fr;
+    }
+
+    .category-links {
+        gap: 10px;
+    }
+
+    .category-links button {
+        padding: 10px 18px;
+    }
+}
