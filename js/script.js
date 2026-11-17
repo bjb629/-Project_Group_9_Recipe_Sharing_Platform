@@ -53,7 +53,7 @@ const recipes = [
 let currentSearch = "";
 let currentCategory = "All";
 
-// Display recipe cards
+// display recipe cards
 function displayRecipes(recipeList) {
     const recipeContainer =
         document.getElementById("recipeContainer");

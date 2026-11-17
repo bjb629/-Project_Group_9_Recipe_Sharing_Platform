@@ -9,14 +9,12 @@ body {
     color: #333;
 }
 
-/* Header */
 .header {
     background-color: #302f20;
     color: white;
     padding: 0 5%;
 }
 
-/* Navigation Bar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -49,7 +47,6 @@ body {
     color: #d6bb80;
 }
 
-/* Main Welcome Section */
 .hero {
     padding: 30px 55px 40px;
 }
@@ -77,7 +74,6 @@ body {
     margin-top: 12px;
 }
 
-/* Search Bar */
 .search-container {
     display: flex;
     align-items: center;
@@ -160,7 +156,6 @@ body {
     color: white;
 }
 
-/* Popular Recipes */
 .popular-recipes {
     text-align: center;
     padding: 35px 5% 55px;
