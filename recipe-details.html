@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recipe Details | Food Swap</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/recipe-details.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <nav class="navbar">
+            <h2 class="nav-title">Food Swap</h2>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Browse Recipes</a></li>
+                <li><a href="submit-recipe.html">Submit Recipe</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="details-container">
+
+        <a href="index.html" class="back-link">
+            &larr; Back to Recipes
+        </a>
+
+        <p id="loadingMessage">Loading recipe...</p>
+
+        <p id="errorMessage"></p>
+
+        <section id="recipeDetails" hidden>
+
+            <div class="recipe-heading">
+                <h1 id="recipeTitle"></h1>
+                <p id="recipeRating"></p>
+            </div>
+
+            <img id="recipeImage" src="" alt="" class="details-image">
+
+            <div class="recipe-information">
+
+                <p><strong>Meal Type:</strong>
+                    <span id="recipeMealType"></span>
+                </p>
+
+                <p><strong>Cooking Time:</strong>
+                    <span id="recipeCookingTime"></span>
+                </p>
+
+                <p><strong>Difficulty:</strong>
+                    <span id="recipeDifficulty"></span>
+                </p>
+
+            </div>
+
+            <section class="recipe-section">
+                <h2>Ingredients</h2>
+                <ul id="recipeIngredients"></ul>
+            </section>
+
+            <section class="recipe-section">
+                <h2>Instructions</h2>
+                <p id="recipeInstructions"></p>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Food Swap | Share something delicious.</p>
+    </footer>
+
+    <script src="js/recipe-details.js"></script>
+
+</body>
+
+</html>
